@@ -20,6 +20,7 @@ DESIGN SYSTEM
   Small: 1.05
   Medium: 1.2
   Paragraph default: 1.6
+  Large: 1.8
 
   - Letter spacing
     - 0.5 px, 0.75 px
@@ -60,6 +61,7 @@ html {
 
   /* Percentage of user's browser font-size setting */
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -67,6 +69,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /*************************************'*/
@@ -161,6 +166,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
